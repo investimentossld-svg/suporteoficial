@@ -267,7 +267,24 @@ body { font-family:'Poppins', sans-serif; background:var(--bg); color:var(--text
 
 
 .hero h1{
-  background: linear-gradient(90deg,#FFD700,#FFF3A0,#FFC107,#FFD700);
-  -webkit-background-clip:text;
-  -webkit-text-fill-color:transparent;
+  background: linear-gradient(
+    90deg,
+    #000000 0%,
+    #2b2b2b 25%,
+    #555555 35%,
+    #1a1a1a 50%,
+    #2b2b2b 65%,
+    #000000 100%
+  );
+  background-size: 200% auto;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  -webkit-text-fill-color: transparent;
+  animation: brilhoPreto 3s linear infinite;
+}
+
+@keyframes brilhoPreto {
+  0% { background-position: 200% center; }
+  100% { background-position: -200% center; }
 }
