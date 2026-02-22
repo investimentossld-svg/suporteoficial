@@ -269,22 +269,21 @@ body { font-family:'Poppins', sans-serif; background:var(--bg); color:var(--text
 .hero h1{
   background: linear-gradient(
     90deg,
-    #000000 0%,
-    #2b2b2b 25%,
-    #555555 35%,
-    #1a1a1a 50%,
-    #2b2b2b 65%,
-    #000000 100%
+    #ffffff 0%,
+    #f5f5f5 25%,
+    #ffffff 50%,
+    #f5f5f5 75%,
+    #ffffff 100%
   );
   background-size: 200% auto;
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
   -webkit-text-fill-color: transparent;
-  animation: brilhoPreto 3s linear infinite;
+  animation: brilhoBranco 3s linear infinite;
 }
 
-@keyframes brilhoPreto {
+@keyframes brilhoBranco {
   0% { background-position: 200% center; }
   100% { background-position: -200% center; }
 }
